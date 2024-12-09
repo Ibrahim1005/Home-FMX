@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.btn {
+  @apply bg-primary text-white outline-none py-[9.6px] px-[22px] rounded-lg text-base font-medium border border-primary;
+}
+.btn-white {
+  @apply bg-white text-primary outline-none py-[9.6px] px-[22px] rounded-lg text-base font-medium border border-primary;
+}
+.footer-span {
+  @apply block md:inline-flex
+}
