@@ -33,12 +33,26 @@
             class="flex gap-10 text-black/50 font-semibold tracking-wider text-sm"
           >
             <li>Home</li>
-            <select class="w-20 bg-white outline-none border-none">
-              <option value="/">Services</option>
-              <option value="./pointOfSales.html">Point of sales</option>
-              <option value="/">Online Ordering</option>
-              <option value="/">Logistic</option>
-            </select>
+            <li class="relative"> 
+             <div class="flex items-center gap-2">
+              Services
+              <span>
+                <img src="./images/ArrowDown.svg" alt="Arrow Down"/>
+              </span>
+             </div>
+              <ul class="bg-white rounded-md h-40 w-40 absolute left-[-50%] shadow-md p-6 space-y-4 ">
+                <li >
+                  <a href="#">Point of sales</a>
+                </li>
+                <li >
+                  <a href="#">Online ordering</a>
+                </li>
+                <li >
+                  <a href="#">Logistics</a>
+                </li>
+                        </ul>
+            </li>
+           
 
             <li>About Us</li>
             <li>FAQs</li>
@@ -59,13 +73,15 @@
           <div class="md:hidden block">
             <i class="fa-solid fa-bars fa-2x"></i>
           </div>
-        </nav>
         </div>
+        </nav>
+       
+
+
+       
     </header>
-
-
     <main class="overflow-hidden">
-       <!-- showcase sdction -->
+       <!-- showcase section -->
       <section
         class="bg-showcase px-[3%] sm:px-4 md:px-0 bg-cover bg-center 2xl:h-screen h-full bg-fixed pb-10 rounded-b-[2rem] bg-no-repeat md:mb-40 w-full overflow-hidden"
       >
@@ -75,7 +91,7 @@
           <div>
             <aside class="text-white space-y-10">
               <div
-                class="text-[24px] md:text-[3.2rem] font-medium leading-[1.55] sm:-mt-2 mt-[4.5rem] max-w-sm sm:max-w-xl md:-mt-2"
+                class="text-[1.5rem] md:text-[3.2rem] font-medium leading-[1.55] sm:-mt-2 mt-[4.5rem] max-w-sm sm:max-w-xl md:-mt-2"
               >
                 <h1 class="w-full max-w-[544.8px]">
                   Empowering Japan's Wholesale Markets With Innovative Solutions
@@ -88,7 +104,7 @@
                   />
                 </div>
                 <p
-                  class="text-[1.013rem] w-full max-w-[26rem] leading-[29px] text-gray/60"
+                  class="text-[1.013rem] w-full max-w-[26rem] leading-[29px] text-gray opacity-60"
                 >
                   Buying and selling produce in the Japan's Wholesale Markets
                   made easier, we’ve got all your needs covered.
@@ -108,7 +124,7 @@
                   </button>
                 </div>
                 <p
-                  class="py-[14px] font-medium text-[10.5px] sm:text-xs md:pb-[6.1rem]"
+                  class="py-[0.875rem] font-medium text-[0.656rem] sm:text-xs md:pb-[6.1rem]"
                 >
                   Collaborate with our team within minutes
                 </p>
@@ -138,7 +154,7 @@
         >
           <div class="-mt-[6rem] md:-mt-[17rem]">
             <h2
-              class="text-2xl max-w-[20rem] sm:max-w-none md:text-[25px] font-medium md:tracking-[0.028rem]"
+              class="text-2xl max-w-[20rem] sm:max-w-none md:text-[1.563rem] font-medium md:tracking-[0.028rem]"
             >
               Thousands of Wholesale Market success stories
             </h2>
@@ -198,10 +214,10 @@
       <!-- Skyrocket your sales  -->
       <section>
         <div
-          class="md:bg-successStory bg-no-repeat bg-contain h-[200px] text-center flex items-center justify-center mt-[45px] flex-col w-full md:h-[59vh] px-[3%] sm:px-4"
+          class="md:bg-successStory bg-no-repeat bg-contain h-[200px] text-center flex items-center justify-center mt-[2.813rem] flex-col w-full md:h-[59vh] px-[3%] sm:px-4"
         >
           <h2
-            class="text-2xl md:text-[37px] font-medium leading-[60px] text-center w-full max-w-[560px]"
+            class="text-2xl md:text-[2.313rem] font-medium leading-[60px] text-center w-full max-w-[560px]"
           >
             Skyrocket your sales today with our unique Solutions
           </h2>
@@ -214,7 +230,7 @@
           class="grid md:space-x-4 md:grid-cols-2 justify-between container mx-auto md:px-0 p-4"
         >
           <div class="text-2xl md:text-[2.3rem] font-medium leading-[1.6] mx-auto">
-            <h2 class="md-[13px] -mt-5 md:-mt-0 md:text-[14.8px] font-medium">
+            <h2 class="md-[0.813rem] -mt-5 md:-mt-0 md:text-[0.925rem] font-medium">
               OUR SERVICES
             </h2>
             <h1 class="my-2 w-full max-w-[618px]">
@@ -229,17 +245,17 @@
             </p>
           </div>
 
-          <div class="flex flex-col space-y-[30px] md:space-y-[53px] my-[30px]">
+          <div class="flex flex-col space-y-[30px] md:space-y-[53px] my-[1.875rem]">
             <div class="flex items-start space-x-[10px] md:max-w-[33rem]">
               <div>
                 <img src="./images/Point-Of-Sale.svg" alt="Point-Of-Sale" />
               </div>
               <div class="md:pt-2 pt-6">
-                <h4 class="text-xl md:text-26px font-medium leading-[1.6] mb-2">
+                <h4 class="text-xl md:text-[1.625rem] font-medium leading-[1.6] mb-2">
                   Point-Of-Sale
                 </h4>
                 <p
-                  class="text-base pt-2 md:pt-0 leading-[28.5px] md:text-[16.2px] md:leading-[31px] font-medium text-gray opacity-60 max-w-[26.375rem]"
+                  class="text-base pt-2 md:pt-0 leading-[28.5px] md:text-[1.013rem] md:leading-[31px] font-medium text-gray opacity-60 max-w-[26.375rem]"
                 >
                   Boost productivity, sales and customers satisfaction with our
                   fast and reliable system designed for your trading success.
@@ -252,11 +268,11 @@
                 <img src="./images/Online-Ordering.svg" alt="Online-Ordering" />
               </div>
               <div class="md:pt-2 pt-6">
-                <h4 class="text-xl md:text-26px font-medium leading-[1.6] mb-2">
+                <h4 class="text-xl md:text-[1.625rem] font-medium leading-[1.6] mb-2">
                   Online Ordering
                 </h4>
                 <p
-                  class="text-base pt-2 md:pt-0 leading-[28.5px] md:text-[16.2px] md:leading-[31px] font-medium text-gray opacity-60 max-w-[26.375rem]"
+                  class="text-base pt-2 md:pt-0 leading-[28.5px] md:text-[1.013rem] md:leading-[31px] font-medium text-gray opacity-60 max-w-[26.375rem]"
                 >
                   Unleash the power of digital sales. Provide your customers
                   with convenience and a centralized order location.
@@ -269,11 +285,11 @@
                 <img src="./images/Logistic.svg" alt="Logistics" />
               </div>
               <div class="md:pt-2 pt-6">
-                <h4 class="text-xl md:text-26px font-medium leading-[1.6] mb-2">
+                <h4 class="text-xl md:text-[1.625rem] font-medium leading-[1.6] mb-2">
                   Logistics
                 </h4>
                 <p
-                  class="text-base pt-2 md:pt-0 leading-[28.5px] md:text-[16.2px] md:leading-[31px] font-medium text-gray opacity-60 max-w-[26.375rem]"
+                  class="text-base pt-2 md:pt-0 leading-[28.5px] md:text-[1.013rem] md:leading-[31px] font-medium text-gray opacity-60 max-w-[26.375rem]"
                 >
                   Streamline your supply chain for seamless operations. Harness
                   the power of efficient delivery with our solution.
@@ -292,9 +308,9 @@
               <h2 class="text-black font-medium md:text-base text-sm my-3">
                 Data Security is Our Priority
               </h2>
-              <div class="w-full md:w-[556px] grid md:gap-[44px] gap-6">
+              <div class="w-full md:w-[556px] grid md:gap-[2.75rem] gap-6">
                 <h2
-                  class="md:text-[40px] md:leading-[60px] text-2xl font-medium text-black leading-[36px]"
+                  class="md:text-[2.5rem] md:leading-[60px] text-2xl font-medium text-black leading-[36px]"
                 >
                   Rest assured, no personal data is transferred outside of
                   Japan’s borders.
@@ -312,9 +328,9 @@
             </div>
 
             <div class="bg-dataSecurity bg-no-repeat w-full  md:h-[450px] bg-cover bg-center p-4 h-[400px] rounded-lg flex justify-center items-center">
-              <div class="bg-white rounded-lg md:px-10 px-5 grid md:gap-3 gap-[6px] md:w-[248px] w-[128.44px] md:py-6 py-3">
+              <div class="bg-white rounded-lg md:px-10 px-5 grid md:gap-3 gap-[0.375rem] md:w-[248px] w-[128.44px] md:py-6 py-3">
                 <div>
-                  <h4 class="text-black font-medium md:text-[28px] md:leading-8 text-center text-sm w-full whitespace-nowrap">Data Security</h4>
+                  <h4 class="text-black font-medium md:text-[1.75rem] md:leading-8 text-center text-sm w-full whitespace-nowrap">Data Security</h4>
                   <p>Secured by Amazon</p>
                   <img src="./images/badge.svg" alt="badge" class="h-[88px] w-full md:w-[150px] md:h-[170px] ">
                   <img src="./images/star.svg" alt="star">
@@ -324,7 +340,7 @@
           </section>
 
           <section
-            class="grid md:grid-cols-3 grid-cols-1 gap-[40px] md:py-20 py-6"
+            class="grid md:grid-cols-3 grid-cols-1 gap-[2.5rem] md:py-20 py-6"
           >
             <!-- One -->
             <div
@@ -400,12 +416,12 @@
             class="xl:flex sm:items-center xl:space-x-6 xl:justify-between space-y-6 md:space-y-0 justify-start sm:justify-center text-start sm:text-center xl:text-left"
           >
             <h2
-              class="md:text-[37px] font-medium xl:min-w-[18rem] text-2xl xl:leading-[58px]"
+              class="md:text-[2.313rem] font-medium xl:min-w-[18rem] text-2xl xl:leading-[58px]"
             >
               Explore the FMX sale solution
             </h2>
             <p
-              class="text-lg leading-[28.5px] md:text-[17px] text-left sm:text-center xl:text-left md:leading-[29px] tracking-tight xl:flex-grow font-medium -mt-8 xl-mt-0 text-gray opacity-50"
+              class="text-lg leading-[28.5px] md:text-[1.063rem] text-left sm:text-center xl:text-left md:leading-[29px] tracking-tight xl:flex-grow font-medium -mt-8 xl-mt-0 text-gray opacity-50"
             >
               Our cutting-edge point of sale solution is tailored for the unique
               needs of traders at the Wholesale Markets
@@ -418,34 +434,34 @@
         </div>
       </section>
 
-      <!-- FREQUENTLY ASKED QUESTIONS -->
+      <!-- Frequently asked questions -->
       <section
         class="md:mx-auto mb-[5.8rem] pt-9 w-full flex md:text-center md:justify-center items-center px-[3%] sm:px-4"
       >
         <div class="w-full mx-auto">
           <div>
-            <h1 class="text-base md:text-[15.6px] font-medium">
+            <h1 class="text-base md:text-[0.975rem] font-medium">
               FREQUENTLY ASKED QUESTIONS
             </h1>
           </div>
           <div>
             <h2
-              class="text-[28px] md:text-[37px] max-w-sm md:max-w-none -tracking-[0.010em font-medium my-4]"
+              class="text-[1.75rem] md:text-[2.313rem] max-w-sm md:max-w-none -tracking-[0.010em font-medium my-4]"
             >
               Don’t hesitate to reach out to us for more inquiry
             </h2>
           </div>
           <div
-            class="min-w-screen mt-4 lg-min-w-full lg:flex justify-center md:-mt-[30px]"
+            class="min-w-screen mt-4 lg-min-w-full lg:flex justify-center md:-mt-[1.875rem]"
           >
             <div
               class="md:px-4 md:pt-9 mt-10 text-start lg:w-[61.5rem] md:w-[61.5rem]"
             >
               <div
-                class="md:mx-auto w-full rounded-2xl mb-[11px] py-2 pl-0 pr-2"
+                class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
               >
                 <div
-                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[18.9px] pb-[18.1px]"
+                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
                 >
                   <button class="transiton duration-300 w-full">
                     <div
@@ -463,10 +479,10 @@
               </div>
 
               <div
-                class="md:mx-auto w-full rounded-2xl mb-[11px] py-2 pl-0 pr-2"
+                class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
               >
                 <div
-                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[18.9px] pb-[18.1px]"
+                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
                 >
                   <button class="transiton duration-300 w-full">
                     <div
@@ -484,10 +500,10 @@
               </div>
 
               <div
-                class="md:mx-auto w-full rounded-2xl mb-[11px] py-2 pl-0 pr-2"
+                class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
               >
                 <div
-                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[18.9px] pb-[18.1px]"
+                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]
                 >
                   <button class="transiton duration-300 w-full">
                     <div
@@ -504,10 +520,10 @@
               </div>
 
               <div
-                class="md:mx-auto w-full rounded-2xl mb-[11px] py-2 pl-0 pr-2"
+                class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
               >
                 <div
-                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[18.9px] pb-[18.1px]"
+                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
                 >
                   <button class="transiton duration-300 w-full">
                     <div
@@ -524,10 +540,10 @@
               </div>
 
               <div
-                class="md:mx-auto w-full rounded-2xl mb-[11px] py-2 pl-0 pr-2"
+                class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
               >
                 <div
-                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[18.9px] pb-[18.1px]"
+                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
                 >
                   <button class="transiton duration-300 w-full">
                     <div
@@ -548,7 +564,7 @@
                 class="md:mx-auto w-full rounded-2xl mb-[11px] py-2 pl-0 pr-2"
               >
                 <div
-                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[18.9px] pb-[18.1px]"
+                  class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
                 >
                   <button class="transiton duration-300 w-full">
                     <div
@@ -583,7 +599,7 @@
           <div class="-mb-6">We are more than willing to serve you!</div>
           <div>
             <p
-              class="text-[17px] md:text-[16.5px] leading-[40px] md:leading-[29px] text-gray opacity-60 max-w-[22rem] md:max-w-[26rem] px-6 md:px-0 pt-3 md:pt-0 w-[24rem] text-center"
+              class="text-[1.063rem] md:text-[1.031rem] leading-[40px] md:leading-[29px] text-gray opacity-60 max-w-[22rem] md:max-w-[26rem] px-6 md:px-0 pt-3 md:pt-0 w-[24rem] text-center"
             >
               Don’t hesitate to reach out to us. We are eager to help you the
               best way we can.
@@ -606,7 +622,7 @@
           <div class="space-y-2">
             <label for="input" class="text-base px-4 font-medium text-gray opacity-50 ">Subscribe to our Newsletter</label>
             <div class="flex items-center outline-0 md:w-[24.2rem] border-black opacity-25 justify-between h-14 border-2 py-3 relative rounded-full">
-              <input id="input" class="border-2 outline-0 text-left place-content-center bg-transparent font-medium text-gray opacity-50 placeholder:text-black px-4 text-[16.5px] leading-[28px]"
+              <input id="input" class="border-2 outline-0 text-left place-content-center bg-transparent font-medium text-gray opacity-50 placeholder:text-black px-4 text-[1.031rem] leading-[28px]"
               placeholder="Enter your email here" 
               type="text">
               <div class="relative h-min -ml-4">
