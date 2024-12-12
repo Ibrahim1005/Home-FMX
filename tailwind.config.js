@@ -12,6 +12,7 @@ module.exports = {
         showcase: "url('/src/images/showcase-background.png')",
         successStory: "url('/src/images/successStory-background.png')",
         dataSecurity: "url('/src/images/lady-security-background.svg')",
+        logisics: "url('/src/images/logistics-banner.png')",
     },
     fontFamily: {
        roboto: ["Roboto", "sans-serif"],

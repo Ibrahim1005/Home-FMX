@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Order</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-roboto">
+    <!-- header -->
+    <header class="bg-white z-50 sticky top-0">
+      <nav
+        class="sm:px-0 w-full max-w-[1192px] mx-auto py-[0.635rem] pt-[0.5rem] flex items-center justify-between"
+      >
+        <div class="md:px-0 px-4">
+          <a href="#"
+            ><img
+              src="./images/fmx-icon.webp"
+              alt="logo"
+              class="w-[60px] h-[35.23px]"
+          /></a>
+        </div>
+        <menu class="hidden xl:block">
+          <ul
+            class="flex gap-10 text-black/50 font-semibold tracking-wider text-sm"
+          >
+            <li>Home</li>
+            <li class="relative">
+              <div class="flex items-center gap-2">
+                Services
+                <span>
+                  <img src="./images/ArrowDown.svg" alt="Arrow Down" />
+                </span>
+              </div>
+              <ul
+                class="bg-white rounded-md h-40 w-40 absolute left-[-40%] shadow-md p-6 space-y-4 text-[14px] px-2"
+              >
+                <li class="flex gap-1 items-center">
+                  <img
+                    src="./images/pointOfSales.svg"
+                    alt="pointOfSales"
+                    class="w-[30.77px] h-[30.77px]"
+                  />
+                  <a href="#" class="whitespace-nowrap">Point of sales</a>
+                </li>
+                <li class="flex gap-1 items-center">
+                  <img
+                    src="./images/onlineOrdering.svg"
+                    alt="pointOfSales"
+                    class="w-[30.77px] h-[30.77px]"
+                  />
+                  <a href="#">Online Ordering</a>
+                </li>
+                <li class="flex gap-1 items-center">
+                  <img
+                    src="./images/Logistic.svg"
+                    alt="pointOfSales"
+                    class="w-[30.77px] h-[30.77px]"
+                  />
+                  <a href="#" class="whitespace-nowrap">logistic</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>About Us</li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </ul>
+        </menu>
+        <div class="flex items-center space-x-4 lg:px-0 px-4">
+          <div class="lg:block hidden">
+            <select name="English" id="en" class="border-none outline-none">
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <div class="flex gap-3 items-center">
+            <button class="btn-white">Login</button>
+            <button class="btn">Register</button>
+          </div>
+          <div class="md:hidden block">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- logistic -->
+      <section
+        class="bg-logisics overflow-hidden md:h-[34rem] h-[32rem] px-[3%] sm:px-4 md:px-0 bg-no-repeat relative bg-cover w-full pb-2 rounded-b-[32px]"
+      >
+        <div
+          class="wrapper md:max-w-[70.6rem] text-center flex flex-col items-center pt-[4.8rem] mx-auto max-w-lg"
+        >
+          <h1
+            class="text-3xl md:text-[3.25rem] max-w-[33rem] md:leading-[80px] leading-[50px] font-medium md:mt-2 md:max-w-[38rem] mt-6"
+          >
+            Buy produce Anytime, Anywhere.
+          </h1>
+          <p
+            class="max-w-[20rem] md:max-w-[26rem] mt-8 md:mt-0 text-[1.031rem] leading-[28px] text-black opacity-50 font-medium"
+          >
+            Buying and selling produce at the Japanese Wholesale Markets made
+            easier, we’ve got all your needs covered.
+          </p>
+          <div
+            class="flex items-center justify-center md:space-x-1 mb-16 mt-10 md:mt-[3.8rem] md:gap-0 gap-4"
+          >
+            <button class="btn">Get Started Free</button>
+            <button class="btn-white !border-none">Talk to support</button>
+          </div>
+        </div>
+      </section>
+      <!-- sellers -->
+      <section class="bg-[#05376a] w-full mx-auto mx-w-[1129.58px]">
+        <div
+          class="text-white py-[4.4rem] md:pb-[3.8rem] md:pt-[6.9rem] -mt-3 grid grid-cols-2 gap-14 md:flex md:max-w-[70.6rem] mx-auto px-[3%] sm:px-0 justify-center md:justify-between"
+        >
+          <div class="text-center flex flex-col items-center">
+            <h1 class="text-2xl md:text-[3.2rem] mb-2 md:mb-7 font-medium">
+              100+
+            </h1>
+            <p class="text-sm md:text-[0.938rem] pt-3 md:pt-6 font-medium">
+              Sellers
+            </p>
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <h1 class="text-2xl md:text-[3.2rem] mb-2 md:mb-7 font-medium">
+              4+
+            </h1>
+            <p class="text-sm md:text-[0.938rem] pt-3 md:pt-6 font-medium">
+              Countries
+            </p>
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <h1 class="text-2xl md:text-[3.2rem] mb-2 md:mb-7 font-medium">
+              3+
+            </h1>
+            <p class="text-sm md:text-[0.938rem] pt-3 md:pt-6 font-medium">
+              Languages
+            </p>
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <h1 class="text-2xl md:text-[3.2rem] mb-2 md:mb-7 font-medium">
+              500+
+            </h1>
+            <p class="text-sm md:text-[0.938rem] pt-3 md:pt-6 font-medium">
+              Buyers
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- why choose FMX -->
+      <section
+        class="wrapper py-[5.8rem] px-[3%] sm:px-0 max-w-[70.6rem] -mb-20 md:mb-0">
+        <!-- CONVENIENCE -->
+        <div
+          class="grid md:grid-cols-2 items-start gap-y-10 md:gap-y-0 gap-x-20 mb-[4.5rem] md:mb-[5.5rem] justify-between"
+        >
+          <div
+            class="md:order-1 false max-w-md md:max-w-none order-1 md:0rder-[-1]"
+          >
+            <h2
+              class="text-primary text-[0.975rem] bg-primary/5 w-fit mb-4 font-medium py-1 px-[17px] rounde-lg"
+            >
+              CONVENIENCE
+            </h2>
+            <h1 class="text-2xl md:text-[2.3rem] font-medium leading-[1.6]">
+              Shop Smarter, Not Harder. Shop Anytime, Anywhere
+            </h1>
+            <p
+              class="max-w-[28.8rem] mt-[1.5rem] mb-[41px] md:mt-12 text-[1.125rem] leading-[28.5px] font-normal text-gray opacity-50"
+            >
+              Whether you're at home, in the office, or on the go, access the
+              Wholesale Markets at your fingertips. Goodbye to stress, buy with
+              just a few clicks.
+            </p>
+          </div>
+          <div><img src="./images/convenience.webp" alt="convenience" /></div>
+        </div>
+        <!-- FRESH PRODUCE -->
+        <div
+          class="grid md:grid-cols-2 items-start gap-y-10 md:gap-y-0 gap-x-20 mb-[4.5rem] md:mb-[5.5rem] justify-between"
+        >
+          <div
+            class="max-w-md md:max-w-none"
+          >
+            <h2
+              class="text-primary text-[0.975rem] bg-primary/5 w-fit mb-4 font-medium py-1 px-[17px] rounde-lg"
+            >
+              FRESH PRODUCE
+            </h2>
+            <h1 class="text-2xl md:text-[2.3rem] font-medium leading-[1.6]">
+              Experience a new way to buy and sell
+            </h1>
+            <p
+              class="max-w-[28.8rem] mt-[1.5rem] mb-[41px] md:mt-12 text-[1.125rem] leading-[28.5px] font-normal text-gray opacity-50"
+            >
+              Get a selection of the finest produce from your favorite Wholesale
+              Sellers.
+            </p>
+          </div>
+          <div>
+            <img src="./images/FRESH-PRODUCE.webp" alt="FRESH PRODUCE" />
+          </div>
+        </div>
+        <!-- EASY PAYMENTS -->
+        <div
+          class="grid md:grid-cols-2 items-start gap-y-10 md:gap-y-0 gap-x-20 mb-[4.5rem] md:mb-[5.5rem] justify-between"
+        >
+          <div
+            class="md:order-1 false max-w-md md:max-w-none order-1 md:0rder-[-1]"
+          >
+            <h2
+              class="text-primary text-[0.975rem] bg-primary/5 w-fit mb-4 font-medium py-1 px-[17px] rounde-lg"
+            >
+              EASY PAYMENTS
+            </h2>
+            <h1 class="text-2xl md:text-[2.3rem] font-medium leading-[1.6]">
+              Effortless Account Management, Easy and Simple for Your
+              Convenience
+            </h1>
+            <p
+              class="max-w-[28.8rem] mt-[1.5rem] mb-[41px] md:mt-12 text-[1.125rem] leading-[28.5px] font-normal text-gray opacity-50"
+            >
+              Buy and Sell using the same traditional payment terms such as
+              Account, Cash on Delivery(COD) and Cash on Pickup(COP).
+            </p>
+          </div>
+          <div>
+            <img src="./images/EASY-PAYMENTS.webp" alt="EASY PAYMENTS" />
+          </div>
+        </div>
+        <!-- FAST DELIVERY -->
+        <div
+          class="grid md:grid-cols-2 items-start gap-y-10 md:gap-y-0 gap-x-20 mb-[4.5rem] md:mb-[5.5rem] justify-between"
+        >
+          <div
+            class="false false max-w-md md:max-w-none"
+          >
+            <h2
+              class="text-primary text-[0.975rem] bg-primary/5 w-fit mb-4 font-medium py-1 px-[17px] rounde-lg"
+            >
+              FAST DELIVERY
+            </h2>
+            <h1 class="text-2xl md:text-[2.3rem] font-medium leading-[1.6]">
+              Get it Fast. We Respect Your Every Minute.
+            </h1>
+            <p
+              class="max-w-[28.8rem] mt-[1.5rem] mb-[41px] md:mt-12 text-[1.125rem] leading-[28.5px] font-normal text-gray opacity-50"
+            >
+              Time is of the essence, and we understand that. With FMX's , your
+              orders are managed for swift dispatch and delivery.
+            </p>
+          </div>
+          <div>
+            <img src="./images/FAST-DELIVERY.webp" alt="FAST DELIVERY" />
+          </div>
+        </div>
+      </section>
+             <!-- Frequently asked questions -->
+       <section
+       class="md:mx-auto mb-[5.8rem] pt-9 w-full flex md:text-center md:justify-center items-center px-[3%] sm:px-4"
+     >
+       <div class="w-full mx-auto">
+         <div>
+           <h1 class="text-base md:text-[0.975rem] font-medium">
+             FREQUENTLY ASKED QUESTIONS
+           </h1>
+         </div>
+         <div>
+           <h2
+             class="text-[1.75rem] md:text-[2.313rem] max-w-sm md:max-w-none -tracking-[0.010em font-medium my-4]"
+           >
+             Don’t hesitate to reach out to us for more inquiry
+           </h2>
+         </div>
+         <div
+           class="min-w-screen mt-4 lg-min-w-full lg:flex justify-center md:-mt-[1.875rem]"
+         >
+           <div
+             class="md:px-4 md:pt-9 mt-10 text-start lg:w-[61.5rem] md:w-[61.5rem]"
+           >
+             <div
+               class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
+             >
+               <div
+                 class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
+               >
+                 <button class="transiton duration-300 w-full">
+                   <div
+                     class="flex w-full flex-grow text-start md:text-center justify-between py-1 lg:pt-0"
+                   >
+                     <span
+                       class="text-gray text-lg md:text-base text-medium tracking-wide max-w-[90%] md:max-w-none"
+                       >What does FMX offer that is better then other software
+                       in the market?</span
+                     >
+                     <img src="./images/plus.svg" alt="plus" />
+                   </div>
+                 </button>
+               </div>
+             </div>
+
+             <div
+               class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
+             >
+               <div
+                 class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
+               >
+                 <button class="transiton duration-300 w-full">
+                   <div
+                     class="flex w-full flex-grow text-start md:text-center justify-between py-1 lg:pt-0"
+                   >
+                     <span
+                       class="text-gray text-lg md:text-base text-medium tracking-wide max-w-[90%] md:max-w-none"
+                       >What is involved in getting on board the
+                       platform?</span
+                     >
+                     <img src="./images/plus.svg" alt="plus" />
+                   </div>
+                 </button>
+               </div>
+             </div>
+
+             <div
+               class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
+             >
+               <div
+                 class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]
+               >
+                 <button class="transiton duration-300 w-full">
+                   <div
+                     class="flex w-full flex-grow text-start md:text-center justify-between py-1 lg:pt-0"
+                   >
+                     <span
+                       class="text-gray text-lg md:text-base text-medium tracking-wide max-w-[90%] md:max-w-none"
+                       >What is the cost of the service?</span
+                     >
+                     <img src="./images/plus.svg" alt="plus" />
+                   </div>
+                 </button>
+               </div>
+             </div>
+
+             <div
+               class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
+             >
+               <div
+                 class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
+               >
+                 <button class="transiton duration-300 w-full">
+                   <div
+                     class="flex w-full flex-grow text-start md:text-center justify-between py-1 lg:pt-0"
+                   >
+                     <span
+                       class="text-gray text-lg md:text-base text-medium tracking-wide max-w-[90%] md:max-w-none"
+                       >Does the platform work with other software?</span
+                     >
+                     <img src="./images/plus.svg" alt="plus" />
+                   </div>
+                 </button>
+               </div>
+             </div>
+
+             <div
+               class="md:mx-auto w-full rounded-2xl mb-[0.688rem] py-2 pl-0 pr-2"
+             >
+               <div
+                 class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
+               >
+                 <button class="transiton duration-300 w-full">
+                   <div
+                     class="flex w-full flex-grow text-start md:text-center justify-between py-1 lg:pt-0"
+                   >
+                     <span
+                       class="text-gray text-lg md:text-base text-medium tracking-wide max-w-[90%] md:max-w-none"
+                       >What is the difference between FMX and other point of
+                       sale software?</span
+                     >
+                     <img src="./images/plus.svg" alt="plus" />
+                   </div>
+                 </button>
+               </div>
+             </div>
+
+             <div
+               class="md:mx-auto w-full rounded-2xl mb-[11px] py-2 pl-0 pr-2"
+             >
+               <div
+                 class="border-black opacity-50 border transiton duration-300 w-full rounded-lg px-6 pt-[1.181rem] pb-[1.131rem]"
+               >
+                 <button class="transiton duration-300 w-full">
+                   <div
+                     class="flex w-full flex-grow text-start md:text-center justify-between py-1 lg:pt-0"
+                   >
+                     <span
+                       class="text-gray text-lg md:text-base text-medium tracking-wide max-w-[90%] md:max-w-none"
+                       >What happens if I have an issue or problem?</span
+                     >
+                     <img src="./images/plus.svg" alt="plus" />
+                   </div>
+                 </button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+
+      <!-- willing to serve -->
+      <section
+        class="flex justify-center w-full text-center relative max-w-[70.6rem] mx-auto mt-[7.5rem] mb-[5.8rem] text-white px-[3%] sm:px-4 h-[30rem] md:h-[27.7rem]"
+      >
+        <img
+          src="./images/willing-to-serve.webp"
+          alt="willing-to-serve"
+          class="rounded-[0.625rem] md:rounded-[2rem]"
+        />
+        <div
+          class="md:text-[2.3rem] text-[1.9rem] max-w-[20rem] md:max-w-none font-medium leading-[1.6] pt-[5rem] md:pt-14 space-y-10 absolute h-full -top-10 w-full flex items-center justify-center flex-col"
+        >
+          <div class="-mb-6">We are more than willing to serve you!</div>
+          <div>
+            <p
+              class="text-[1.063rem] md:text-[1.031rem] leading-[40px] md:leading-[29px] text-gray opacity-60 max-w-[22rem] md:max-w-[26rem] px-6 md:px-0 pt-3 md:pt-0 w-[24rem] text-center"
+            >
+              Don’t hesitate to reach out to us. We are eager to help you the
+              best way we can.
+            </p>
+          </div>
+          <div>
+            <a href="/">
+              <button class="btn">Get In Touch</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+     <footer class="bg-[#e6f7e4] h-full md:h-[29.2rem] px-[3%] sm:px-0 bg-cover bg-no-repeat relative">
+      <div class="md:flex pt-[3rem] md:pt-[3.7rem] items-center justify-between max-w-[70.6rem] mx-auto gap-20">
+        <div class="grid gap-4">
+          <a class="flex-grow" href="#"><img src="./images/fmx-icon.webp" alt="icon" class="!w-[120px] !h-[80px]"></a>
+          <div class="space-y-2">
+            <label for="input" class="text-base px-4 font-medium text-gray opacity-50 ">Subscribe to our Newsletter</label>
+            <div class="flex items-center outline-0 md:w-[24.2rem] border-black opacity-25 justify-between h-14 border-2 py-3 relative rounded-full">
+              <input id="input" class="border-2 outline-0 text-left place-content-center bg-transparent font-medium text-gray opacity-50 placeholder:text-black px-4 text-[1.031rem] leading-[28px]"
+              placeholder="Enter your email here" 
+              type="text">
+              <div class="relative h-min -ml-4">
+                <img src="./images/green-arrow.svg" alt="arrow" class="m-1 p-px ">
+                <img src="./images/arrow-right.svg" alt="arrow-right" class="absolute top-[15px] right-[14px]">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 grid-cols-2 gap-20 mt-16 md:-mt-2  ">
+          <div class="font-medium">
+            <h4>Company</h4>
+            <menu class="mt-7">
+              <ul class="space-y-4 text-[0.9375rem] font-medium text-gray opacity-50">
+                <li><a href="about-us">About</a></li>
+                <li><a href="contact-us">Contact</a></li>
+              </ul>
+            </menu>
+          </div>
+
+          <div class="font-medium">
+            <h4>Help and Support</h4>
+            <menu class="mt-7">
+              <ul class="space-y-4 text-[0.9375rem] font-medium text-gray opacity-50">
+                <li><a href="contact-us">Talk to support</a></li>
+              </ul>
+            </menu>
+          </div>
+
+          <div class="font-medium -mt-2 md:-mtt-0">
+            <h4>Services</h4>
+            <menu class="mt-7">
+              <ul class="space-y-4 text-[0.9375rem] font-medium text-gray opacity-50">
+                <li><a href="abou-us">Point-of-sale</a></li>
+                <li><a href="contact-us">Logistics</a></li>
+                <li><a href="contact-us">Online ordering</a></li>
+              </ul>
+            </menu>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center pt-20 mt-4">
+        <div class="md:absolute bottom-8 w-full justify-between items-center lg:flex max-w-[70.6rem] mx-auto text-[0.9375rem] md:text-[0.9250rem] leading-[40px] md:leading-[28px] -m[0.1875rem] font-medium text-gray opacity-50">
+          <ul class="flex space-x-7 md:hidden mb-16 list-none">
+            <li>
+              <a href="/terms-and-conditions">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="/privacy-policy">Privacy Policy</a>
+            </li>
+          </ul>
+          <div>
+            <span class="footer-span">© 2024 Fresh Market Exchange (FMX) Inc.</span>
+            <span class="footer-span mx-2">Copyright and rights reserved</span>
+          </div>
+          <div>
+            <ul class="md:flex space-x-7 hidden list-disc">
+              <li class="list-none">
+                <a href="/terms-and-conditions">Terms and Conditions</a>
+              </li>
+              <li class="list-none">
+                <a href="/privacy-policy">Privacy Policy</a>
+              </li>
+              <li class="list-none">
+                <a href="/commercial-disclosure">Commercial Disclosure</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </footer>
+  </body>
+</html>
