@@ -7,8 +7,11 @@
   @apply bg-primary text-white outline-none py-[9.6px] px-[22px] rounded-lg text-base font-medium border border-primary;
 }
 .btn-white {
-  @apply bg-white text-primary outline-none py-[9.6px] px-[22px] rounded-lg text-base font-medium border border-primary;
+  @apply text-primary outline-none py-[9.6px] px-[22px] rounded-lg text-base font-medium border border-primary;
 }
 .footer-span {
   @apply block md:inline-flex
+}
+.wrapper {
+  @apply container mx-auto max-w-[1129.59px];
 }

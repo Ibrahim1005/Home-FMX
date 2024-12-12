@@ -14,7 +14,8 @@ module.exports = {
         dataSecurity: "url('/src/images/lady-security-background.svg')",
     },
     fontFamily: {
-       roboto: ["Roboto", "sans-serif"], 
+       roboto: ["Roboto", "sans-serif"],
+       fontFamily: [] 
     }
   },
   },
